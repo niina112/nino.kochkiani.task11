@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    width: 100vh;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+.sun {
+    width: 17rem;
+    height: 16.4375rem;
+    position: absolute;
+    z-index: 3;
+    top: 70px;
+    right: 650px;
+    animation: rotate 5s infinite ease-in-out;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.cloud {
+    left: 1200px;
+    top: 50px;
+    position: absolute;
+    z-index: 3;
+    animation: cloud 3s ease-in-out infinite;
+}
+
+@keyframes cloud {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-1300%);
+    }
+}
+
+.tree {
+    position: absolute;
+    z-index: 4;
+    top: 43vh;
+    left: 160vh;
+    animation: tree 1s ease-in-out infinite;
+}
+
+@keyframes tree {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-1300%);
+    }
+}
+
+.mario1 {
+    width: 7.4375rem;
+    height: 7.9375rem;
+    top: 73vh;
+    position: absolute;
+    z-index: 5;
+    animation: mario1 7s ease-in-out infinite;
+}
+
+@keyframes mario1 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(1300%);
+    }
+}
+
+.mario2 {
+    width: 7.4375rem;
+    height: 7.9375rem;
+    top: 89vh;
+    left: 160vh;
+    position: absolute;
+    z-index: 6;
+    animation: mario2 10s ease-in-out infinite;
+}
+
+@keyframes mario2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-600%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
